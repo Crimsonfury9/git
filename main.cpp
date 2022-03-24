@@ -124,9 +124,9 @@ int main(void)
 	//		void* user_data);
 	
 	//TODO code 6: compile the source code obtained in step 5
-	
-	printf("program ID = %i\n", err3);
 	cl_int err3= clBuildProgram(program, 0, NULL, NULL, NULL, NULL);
+	printf("program ID = %i\n", err3);
+	
 	//------------------------------------------------------------------------
 
 	//***Step 7*** creates the kernel, this creates a kernel from one of the functions in the cl_program you just built
